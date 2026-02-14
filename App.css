@@ -1,0 +1,70 @@
+/* Whole Page */
+.main-container {
+  background-color: #e6f9f9;
+  min-height: 100vh;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+}
+
+/* Doctor Box */
+.doctor-box {
+  width: 80%;
+  max-width: 400px;
+  background: white;
+  border-radius: 0; /* rectangle shape */
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.doctor-img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Text Section */
+.text-section {
+  padding: 20px;
+}
+
+.title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #004d4d;
+}
+
+.description {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.get-started {
+  background-color: #008080;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+
+.get-started:hover {
+  background-color: #006666;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+    text-align: center;
+  }
+  .doctor-box {
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+}
